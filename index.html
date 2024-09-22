@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Link Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Tan Nguyen Portfolio Website</title>
+    <!-- MAIN CSS -->
+    <link rel="stylesheet" href="index.css">
+
+</head>
+<body>
+    <!-- HEADER DESIGN -->
+    <header class="header">
+        <!-- <a href="#" class="logo">TanNguyen</a> -->
+        <img src="img/logo-Photoroom.png" class="logo" alt="logo">
+
+        <i class="fa-solid fa-bars" id="menu-icon"></i>
+
+
+        <nav class="navbar">
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#challenges">Challenges</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- HOME SECTION DESIGN -->
+    <section class="home" id="home">
+        <div class="home-content">
+            <h3>Hi, Myself</h3>
+            <h1><span class="text-color">Tan</span> Nguyen From Vietnam</h1>
+            <h3>And I'm a <span class="multiple-text"></span></h3>
+        </div>
+
+        <div class="home-img">
+            <img src="img/background_img_header.jpg" alt="background_img_header">
+        </div>
+    </section>
+
+    <!-- ABOUT SECTION DESIGN -->
+     <section class="about" id="about">
+        <div class="about-img">
+            <img src="img/z5712897663883_b3192e05d7379630dd899f74206f57dc.jpg" alt="">
+        </div>
+
+        <div class="about-content">
+            <h1>About <span class="text-color">me</span></h1>
+            <p class="introduce-text">Hi, I’m Tan, a first-year college student majoring in Computer Information Systems at 
+                Rhode Island College. Originally from overseas, I spent two years in university before 
+                moving to the U.S., where I've now been for almost a year. I currently work part-time
+                in IT services while pursuing my passion for web design and development. With basic 
+                experience in HTML, CSS, and JavaScript, I enjoy building user-friendly interfaces and 
+                always eager to learn new technologies. Outside of work and school, I help my parents
+                with technology and continually seek ways to improve my skills. I'm excited about my
+                journey toward becoming a front-end developer and UI/UX designer.
+            </p>
+
+            <div class="tab-titles">
+                <p class="tab-links" data-tab="past">Past</p>
+                <p class="tab-links" data-tab="present">Present</p>
+                <p class="tab-links" data-tab="future">Future</p>
+            </div>
+            <div class="tab-contents active-tab" id="past">
+                <ul>
+                    <li>
+                        <span>9/2021 - 2023</span>
+                        <p>Industry University of Ho Chi Minh City</p>
+                    </li>
+                    <li>
+                        <span>5/2021</span>
+                        <p>Graduated Sa Dec City High School</p>
+                    </li>
+                    <li>
+                        <span>11/2023</span>
+                        <p>Moved to the United States</p>
+                    </li>
+                </ul>
+            </div>
+            <div class="tab-contents" id="present">
+                <ul>
+                    <li>
+                        <span>8/2024 - Current</span>
+                        <p>Rhode Island College</p>
+                        <p>Started work at Helpdesk</p>
+                    </li>
+                </ul>
+            </div>
+            <div class="tab-contents" id="future">
+                <ul>
+                    <li>
+                        <span>My Goals</span>
+                        <p>Find Intership opprtunities at Fidelity</p>
+                        <p>2026-2027 Graduate College</p>
+                        <p>Become Frontend Engineer and UI/UX Designer</p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+     </section>
+
+    <!-- SKILLS SECTION DESIGN -->
+    <section class="skills" id="skills">
+        <div class="basic-skills">
+            <h1>Basic</h1>
+            <div class="icon-skills">
+                <i class="fa-brands fa-html5"></i>
+                <i class="fa-brands fa-css3-alt"></i>
+                <i class="fa-brands fa-js"></i>
+                <i class="fa-brands fa-github"></i>
+            </div>
+        </div>
+
+        <div class="learning-skills">
+            <h1>Learning</h1>
+            <div class="icon-skills">
+                <i class="fa-brands fa-figma" style="color: #63E6BE;"></i>
+                <i class="fa-brands fa-bootstrap"></i>
+                <i class="fa-brands fa-react"></i>
+                <i class="fa-brands fa-angular"></i>
+            </div>
+        </div>
+    </section>
+
+    <!-- SKILLS SECTION DESIGN -->
+     <section class="challenges" id="challenges">
+        <h1>Challenges</h1>
+
+        <div class="challenges-container">
+            <div class="challenges-box">
+                <img src="img/pass-words-generate-app.webp" alt="">
+                <div class="details-info">
+                    <h4>Pass Words Generate App</h4>
+                    <p>This app will be an excellent test of your HTML, CSS, and JS skills. You'll build custom form controls and use JavaScript to generate random passwords.</p>
+                    <a href="https://tannguyenk3.github.io/password-generator-app-main/" target="_blank">
+                        <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                    </a>
+                </div>
+            </div>
+
+            <div class="challenges-box">
+                <img class="img-2" src="img/time-tracking-dashboard.webp" alt="">
+                <div class="details-info">
+                    <h4>Time tracking dashboard</h4>
+                    <p>A perfect opportunity to practice your CSS Grid skills. For anyone wanting to take it up a notch, we provide a JSON data file to practice working with data..</p>
+                    <a href="https://tannguyenk3.github.io/time-tracking-dashboard-main/" target="_blank">
+                        <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                    </a>
+                </div>
+            </div>
+
+            <div class="challenges-box">
+                <img src="img/Newsletter-sign-up-form-with-success-message.webp" alt="">
+                <div class="details-info">
+                    <h4>Newsletter sign-up form</h4>
+                    <p>This will test your skills with basic form structure, validation, and submission. The success state will also be an excellent opportunity to work with DOM manipulation.</p>
+                    <a href="https://tannguyenk3.github.io/newsletter-sign-up-with-success-message-main/" target="_blank">
+                        <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                    </a>
+                </div>
+            </div>
+
+            <div class="challenges-box">
+                <img class="img-4" src="img/new-home-pages.webp" alt="">
+                <div class="details-info">
+                    <h4>News homepage</h4>
+                    <p>This news homepage will be an excellent opportunity to practice your CSS Grid skills. There will be lots of tricky decisions to make and plenty of learning opportunities!</p>
+                    <a href="https://tannguyenk3.github.io/news-homepage-main/" target="_blank">
+                        <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                    </a>
+                </div>
+            </div>
+
+            <div class="challenges-box">
+                <img src="img/Mortgage-repayment-calculator.webp" alt="">
+                <div class="details-info">
+                    <h4>Mortgage repayment calculator</h4>
+                    <p>This mortgage calculator is an excellent project for practicing working with forms, client-side validation, and updating the DOM. Remember to focus on accessibility, too!</p>
+                    <a href="https://tannguyenk3.github.io/mortgage-repayment-calculator-main/" target="_blank">
+                        <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                    </a>
+                </div>
+            </div>
+
+            <div class="challenges-box">
+                <img src="img/contact-form.webp" alt="">
+                <div class="details-info">
+                    <h4>Contact Form</h4>
+                    <p>Building accessible forms is a crucial task for front-end developers. This challenge will help you practice building a form with several input types and validation.</p>
+                    <a href="https://tannguyenk3.github.io/contact-form/" target="_blank">
+                        <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <div class="btn">
+            <a href="https://github.com/tannguyenk3?tab=repositories" target="_blank">
+                <button>See More</button>
+            </a>
+        </div>
+    </section>
+
+    <!-- CONTACT SECTION DESIGN -->
+
+    <section class="contact" id="contact">
+            <div class="row">
+                <div class="contact-left">
+                    <h1>Contact <span>me</span></h1>
+                    <i class="fa-solid fa-envelope">
+                        <span>tnguyen_3607@email.ric.edu</span>
+                    </i>
+                    <i class="fa-solid fa-phone">
+                        <span>(401) 580-2323</span>
+                    </i>
+                    <div class="social-media">
+                        <a href="https://www.facebook.com/ndt.META/"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="https://www.instagram.com/dwctn.ngyn/"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="https://www.linkedin.com/in/t%C3%A2n-nguy%E1%BB%85n-%C4%91%E1%BB%A9c-9147a4306/"><i class="fa-brands fa-linkedin-in"></i></a>
+                    </div>
+                    <div class="download-resume">
+                        <button>Download CV</button>
+                    </div>
+                </div>
+                <div class="contact-right">
+                    <form>
+                        <input type="text" name="name" placeholder="Your Name" required>
+                        <input type="email" name="email" placeholder="Your Email" required>
+                        <textarea name="message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit">Submit</button>
+                    </form>
+                </div>
+            </div>
+    </section>
+
+    <!-- FOOTER DESIGN -->
+     <footer class="footer">
+        <div class="footer-text">
+            <p>Copyright &copy; 2024 by @tannguyen | All Rights Reserved.</p>
+        </div>
+
+        <div class="footer-iconTop">
+            <a href="#home">
+                <i class="fa-solid fa-arrow-up"></i>
+            </a>
+        </div>
+     </footer>
+</body>
+<!-- SCROLL REVEAL JS -->
+<script src="https://unpkg.com/scrollreveal"></script>
+<!-- TYPED JS -->
+<script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+<!-- MAIN JS -->
+<script src="index.js"></script>
+
+</html>

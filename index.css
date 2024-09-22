@@ -1,0 +1,735 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    border: none;
+    outline: none;
+    scroll-behavior: smooth;
+    font-family: "Poppins", sans-serif;
+}
+
+:root {
+    --bg-color: #080808;
+    --red-color: #FF3131;
+    --red-bold-color: #d91849;
+    --grey-color: #D9D9D9;
+    --white-color: #ffffff;
+}
+
+html {
+    font-size: 62.5%;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: var(--bg-color);
+    color: var(--white-color);
+}
+
+section {
+    min-height: 50vh;
+    padding: 10rem 9% 2rem;
+}
+
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 2rem 9%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+}
+
+.logo {
+    cursor: pointer;
+}
+
+.navbar ul{
+    list-style-type: none;
+    display: flex;
+}
+
+.navbar a {
+    font-size:  1.5rem;
+    color: var(--white-color);
+    margin-left: 4rem;
+}
+
+.navbar a:hover,
+.navbar a.active {
+    color: var(--red-color);
+}
+
+#menu-icon {
+    font-size: 3.6rem;
+    color: var(--white-color);
+    display: none;
+}
+
+/* -------HOME------- */
+
+.home {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.home-content h3 {
+    font-size: 3.2rem;
+}
+
+.home-content h3:nth-last-of-type(2) {
+    margin-bottom: 2rem;
+}
+
+.home-content h1 {
+    font-size: 5.6rem;
+}
+
+.text-color {
+    color: var(--red-color);
+}
+
+.home-img img {
+    width: 25vw;
+    animation: floatImage 4s ease-in-out infinite;
+}
+
+@keyframes floatImage {
+    0% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-2.4rem);
+    }
+    100% {
+        transform: translateY(0)
+    }
+}
+
+/* -------ABOUT------- */
+.about {
+    display: flex;
+    gap: 15rem;
+    justify-content: center;
+    align-items: center;    
+}
+
+.about-img img{
+    width: 20vw;
+    border-radius: 15px;
+}
+
+.about-content h1 {
+    font-size: 5.6rem;
+}
+
+.about-content p {
+    text-align: start;
+    color: var(--grey-color);
+}
+
+.tab-titles {
+    margin: 20px 0 15px;
+    display: flex;
+    gap: 7rem;
+}
+
+.tab-links {
+    font-size: 1.5rem;
+    font-weight: 700;
+    cursor: pointer;
+    position: relative;
+    display: inline-block;
+}
+
+.tab-links::after {
+    content: '';
+    width: 0%;
+    height: 3px;
+    background: var(--red-color);
+    position: absolute;
+    left: 0;
+    bottom: 0px;
+    transition: width 0.5s;
+}
+
+.tab-links:hover::after {
+    width: 100%; /* Expand the underline on hover */
+    opacity: 80%;
+}
+
+.tab-contents ul{
+    list-style-type: none;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 15px;
+}
+
+.tab-contents ul li span {
+    color: var(--red-color);
+}
+
+.tab-contents {
+    opacity: 0; /* Start invisible */
+    max-height: 0; /* Start collapsed */
+    transition: opacity 0.5s ease, max-height 0.5s ease; /* Smooth transition */
+}
+
+.tab-contents.active-tab {
+    opacity: 1; /* Fade in */
+}
+
+
+/* -------------Skills---------- */
+
+.skills {
+    display: grid;
+    text-align: center;
+    gap: 50px;
+}
+
+.skills h1 {
+    font-size: 5.6rem;
+    margin-bottom: 5rem;
+}
+
+.skills .icon-skills {
+    display: flex;
+    gap: 20px;
+    justify-content: space-between;
+}
+
+.icon-skills .fa-brands{
+    background-color: var(--bg-color);
+    padding: 5rem 5rem 5rem;
+    border-radius: 10px;
+    border: .2rem solid var(--bg-color);
+    transition: .2s ease;
+    font-size: 7rem;
+}
+
+.icon-skills .fa-brands:hover {
+    transform:  scale(1.1);
+    border-color: var(--bg-color);
+}
+
+.icon-skills .fa-html5 {
+    color: red;
+    border-color: red;
+}
+
+.icon-skills .fa-css3-alt {
+    color: blue;
+    border-color: blue;
+}
+
+.icon-skills .fa-js {
+    color: yellow;
+    border-color: yellow;
+}
+
+.icon-skills .fa-github {
+    color: white;
+    border-color: white;
+}
+
+.icon-skills .fa-figma {
+    color: #63E6BE;
+    border-color: #63E6BE;
+}
+
+.icon-skills .fa-bootstrap {
+    color: #B197FC;
+    border-color: #B197FC;
+}
+
+.icon-skills .fa-react {
+    color: #74C0FC;
+    border-color: #74C0FC;
+}
+
+.icon-skills .fa-angular {
+    color: #d2220f;
+    border-color: #d2220f;
+}
+
+/* -------Challenges------- */
+
+.challenges h1 {
+    font-size: 5.6rem;
+    /* text-align: center; */
+    margin-bottom: 4rem;
+}
+
+.challenges-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    align-items: center;
+    gap: 2.5rem;
+
+}
+
+.challenges-container .challenges-box {
+    position: relative;
+    border-radius: 2rem;
+    box-shadow: 0 0 1rem var(--bg-color);
+    overflow: hidden;
+    display: flex;
+}
+
+.challenges-box img {
+    width: 100%;
+    transition: .5s ease;
+    opacity: 0.7;
+}
+
+.challenges-box:hover img {
+    transform: scale(1.1);
+}
+
+.challenges-box .details-info {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgb(0,0,0);
+    background: linear-gradient(180deg, rgba(0,0,0,1) 0%, rgba(217,24,73,1) 100%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    padding: 0 4rem;
+    transform: translateY(100%);
+}
+
+.challenges-box:hover .details-info {
+    transform: translateY(0);
+    transition: transform .8s ease;
+}
+
+.details-info h4 {
+    font-size: 2.5rem;
+}
+
+.details-info p {
+    font-size: 1.3rem;
+    margin: 2rem 0 1rem;
+}
+
+.details-info a {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 5rem;
+    height: 5rem;
+    border-radius: 50%;
+    background: var(--grey-color);
+}
+
+.details-info a i {
+    font-size: 2rem;
+    color: var(--bg-color);
+}
+
+.btn {
+    margin-top: 4rem;
+    text-align: center;
+}
+
+.btn button {
+    color: var(--white-color);
+    border: 2px solid var(--red-bold-color);
+    background: var(--bg-color);
+    padding: 1rem 2rem;
+    font-size: 2.5rem;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.btn button:hover {
+    background-color: var(--red-bold-color);
+    box-shadow: 2px 3px 57px -7px var(--grey-color);
+}
+
+/* -------Contact------- */
+
+.row {
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+    gap: 100px;
+}
+
+.row .contact-left{
+    display: grid;
+    gap: 20px;
+}
+
+.row .contact-left .social-media {
+    display: flex;
+    gap: 20px;
+}
+
+.row .contact-left h1{
+    font-size: 5.6rem;
+}
+
+.row .contact-left h1 span{
+    color: var(--red-color);
+}
+
+.row .contact-left i{
+    font-size: 2rem;
+}
+
+.row .contact-left .social-media i {
+    color: var(--grey-color);
+}
+
+.download-resume button{
+    padding: 2rem 4rem;
+    border-radius: 5px;
+    color: var(--white-color);
+    border: 1px solid var(--red-bold-color);
+    background: var(--red-bold-color);
+    box-shadow: 2px 3px 57px -7px var(--grey-color);
+    cursor: pointer;
+}
+
+.download-resume button:hover{
+    border: 1px solid var(--red-bold-color);
+    border-radius: 5px;
+    color: var(--white-color);
+    background: var(--bg-color);
+}
+
+
+.row .contact-right form {
+    display: grid;
+    gap: 20px;
+}
+
+.row .contact-right form input{
+    width: 600px;
+    max-width: 100%;
+    height: 100%;
+}
+
+form input, form textarea {
+    border: 0;
+    outline: none;
+    background-color: var(--grey-color);
+    padding: 15px; 
+    color: var(--bg-color);
+    font-size: 18px;
+    border-radius: 5px;
+}
+
+form button {
+    max-width: 50%;
+    padding: 2rem 2.5rem;
+    border-radius: 5px;
+    background-color: var(--red-bold-color);
+    color: var(--white-color);
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+form button:hover {
+    background-color: var(--red-color);
+}
+
+/* -------Footer------- */
+.footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 1rem 9%;
+    background: #333333;
+}
+
+.footer-text {
+    font-size: 1.6rem;
+}
+
+.footer-iconTop {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    padding: .8rem 1rem;
+    background: var(--red-bold-color);
+    border-radius: .8rem;
+    transition: .5s ease;
+    cursor: pointer;
+}
+
+.footer-iconTop a i {
+    font-size: 2.4rem;
+    color: var(--grey-color);
+}
+
+@media (max-width: 1393px) {
+    .row .contact-right form input{
+        width: 600px;
+    }
+}
+
+@media (max-width: 1364px) {
+    .challenges-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .row .contact-right form input{
+        width: 500px;
+    }
+}
+
+@media (max-width: 1200px) {
+    html {
+        font-size: 55%;
+    }
+
+    .about {
+        align-items: start;    
+    }
+}
+
+@media (max-width: 1099px) {
+    .row .contact-left h1 {
+        font-size: 5rem;
+    }
+
+    .row .contact-right form input{
+        width: 450px;
+    }
+
+    .row .contact-left i{
+        font-size: 1.8rem;
+    }
+}
+
+@media (max-width: 992px) {
+    .header {
+        padding: 2rem 3%;
+    }
+
+    section {
+        padding: 10rem 3%;
+    }
+
+    .home-content h3 {
+        font-size: 3rem;
+    }
+
+    .home-content h1,
+    .about h1,
+    .skills h1,
+    .challenges h1 {
+        font-size: 5rem;
+    }
+
+    .skills {
+        padding: 7rem;
+    }
+
+    .contact {
+        min-height: auto;
+    }
+    
+    .footer {
+        padding: 2rem 3%;
+    }
+}
+
+@media (max-width: 873px) {
+    .home-img img {
+        width: 30vw;
+        /* margin-top: 4rem; */
+    }
+
+    .about-img img {
+        width: 25vw;
+    }
+
+    .row .contact-left h1 {
+        font-size: 4rem;
+    }
+
+    .row .contact-left i {
+        font-size: 1.3rem;
+    }
+
+    .row .contact-right form input{
+        width: 400px;
+    }
+}
+
+@media (max-width: 768px) {
+    #menu-icon  {
+        display: block;
+    }
+
+    .navbar {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        padding: 1rem 3%;
+        background-color: var(--bg-color);
+        border-top: .1rem solid var(--grey-color);
+        box-shadow: 0 .5rem 1rem var(--red-color);
+        display: none;
+    }
+
+    .navbar.active {
+        display: block;    
+    }
+
+    .navbar ul {
+        display: block;
+        font-size: 3rem;
+        margin: 3rem 0;
+    }
+
+    .home {
+        flex-direction: column;
+    }
+
+    .home-content {
+        order: 2;
+    }
+
+    .home-content h3 {
+        font-size: 2.6rem;
+    }
+
+    .home-img img {
+        width: 50vw;
+        margin-top: 4rem;
+    }
+
+    .about {
+        flex-direction: column;
+        gap: 10px;
+        align-items: center;
+    }
+
+    .about-img img {
+        width: 50vw;
+
+    }
+
+    .skills .icon-skills {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .row {
+        gap: 0px;
+    }
+
+    .row .contact-right form input{
+        width: 350px;
+    }
+    
+    .download-resume button{
+        padding: 1.5rem 2.5rem;
+        box-shadow: 2px 3px 57px -7px var(--grey-color);
+
+    }
+
+    form button {
+        max-width: 50%;
+        padding: 1.5rem 2rem;
+        font-size: 1.5rem;
+
+    }
+}
+
+@media (max-width: 700px) {
+    .challenges-container {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .challenges-box img {
+        width: 100%;
+    }
+}
+
+@media (max-width: 600px) {
+    html {
+        font-size: 50%;
+    }
+
+    .home-img img {
+        width: 55vw;
+
+    }
+
+    .row {
+        display: grid;
+        gap: 50px;
+    }
+}
+
+@media (max-width: 456px) {
+    .home-img img {
+        width: 60vw;
+    }
+
+    .about h1{
+        text-align: center;
+    }
+
+    .about .tab-titles  {
+        justify-content: center;
+    }
+
+    .about .tab-contents ul li{
+        text-align: center;
+    }
+
+    .about .tab-contents ul li p{
+        text-align: center;
+    }
+
+    .skills .icon-skills {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .row .contact-left h1 {
+        font-size: 5rem;
+        text-align: center;
+    }
+
+    .row .contact-left i {
+        display: flex;
+        justify-content: center;
+    }
+
+    .row .contact-left .social-media {
+        justify-content: center;
+    }
+
+    .download-resume {
+        text-align: center;
+    }
+
+    .footer-text {
+        font-size: 1.2rem;
+    }
+}
+
