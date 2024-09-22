@@ -265,7 +265,6 @@ section {
 
 .challenges h1 {
     font-size: 5.6rem;
-    /* text-align: center; */
     margin-bottom: 4rem;
 }
 
@@ -491,7 +490,7 @@ form button:hover {
     }
 
     .row .contact-right form input{
-        width: 500px;
+        width: 450px;
     }
 }
 
@@ -507,7 +506,11 @@ form button:hover {
 
 @media (max-width: 1099px) {
     .row .contact-left h1 {
-        font-size: 5rem;
+        font-size: 4.7rem;
+    }
+
+    .row .contact-left i span {
+        font-size: 1.5rem;
     }
 
     .row .contact-right form input{
@@ -555,7 +558,6 @@ form button:hover {
 @media (max-width: 873px) {
     .home-img img {
         width: 30vw;
-        /* margin-top: 4rem; */
     }
 
     .about-img img {
@@ -566,12 +568,16 @@ form button:hover {
         font-size: 4rem;
     }
 
+    .row .contact-left i span {
+        font-size: 1.4rem;
+    }
+
     .row .contact-left i {
-        font-size: 1.3rem;
+        font-size: 1.5rem;
     }
 
     .row .contact-right form input{
-        width: 400px;
+        width: 390px;
     }
 }
 
@@ -649,6 +655,18 @@ form button:hover {
 
     }
 
+    .row .contact-left h1 {
+        font-size: 3.7rem;
+    }
+
+    .row .contact-left i span {
+        font-size: 1.2rem;
+    }
+
+    .row .contact-right form input{
+        width: 350px;
+    }
+
     form button {
         max-width: 50%;
         padding: 1.5rem 2rem;
@@ -682,6 +700,19 @@ form button:hover {
         display: grid;
         gap: 50px;
     }
+
+    .row .contact-left h1 {
+        font-size: 6rem;
+    }
+
+    .row .contact-left i {
+        font-size: 2rem;
+    }
+
+    .row .contact-left i span {
+        font-size: 2rem;
+    }
+
 }
 
 @media (max-width: 456px) {
@@ -712,24 +743,15 @@ form button:hover {
 
     .row .contact-left h1 {
         font-size: 5rem;
-        text-align: center;
+        /* margin: 0 auto; */
+        margin-left: 50px;
     }
 
     .row .contact-left i {
         display: flex;
-        justify-content: center;
-    }
-
-    .row .contact-left .social-media {
-        justify-content: center;
-    }
-
-    .download-resume {
-        text-align: center;
     }
 
     .footer-text {
         font-size: 1.2rem;
     }
 }
-
